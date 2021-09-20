@@ -27,6 +27,29 @@ header button{
 main{
     height: calc(100vh - 100px);
     overflow: scroll;
+    position: relative;
+}
+
+.btn-left{
+    color: lightgray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-left i{
+    font-size: 40px;
+}
+.btn-right{
+    color: lightgray;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.btn-right i{
+    font-size: 40px;
 }
 
 .participant-container{
@@ -43,6 +66,15 @@ main{
   max-height: 150px;
   flex-shrink: 0;
   margin: 2px;
+  position: relative;
+}
+
+.participant-name{
+    background-color: #00000080;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    color: white;
 }
 
 img{
